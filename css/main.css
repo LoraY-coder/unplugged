@@ -87,6 +87,172 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
+/* --------------- Global Styles ----------------*/
+.content-wrapper {
+  outline: 3px dotted red;
+  width: 90%;
+  /* max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; */
+
+}
+
+/*  ----------------- Base Header - Footer Styles  --------------*/
+/* ------------ Header -----------*/
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+  /* max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap; */
+}
+
+/* header a {} */
+
+/* header a img {} */
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+/* header nav ul li {} */
+
+/* ------------  Footer --------------*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* --------------- Mobile Main Page Styles ----------------*/
+/* main {
+  display: flex;
+  justify-content: center;
+} */
+
+/* --------------- Hero ----------------*/
+.hero-area {
+  display: flex;
+  justify-content: center;
+}
+
+/* --------------- Aside ----------------*/
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+/* aside .form-description {} */
+
+/* aside .form {} */
+
+/* --------------- Features ----------------*/
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  /* flex-direction: column;  ***???why not this????*****
+  align-items: center;
+  text-align: center; */
+}
+
+/* .features article {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+} */
+/* 
+.features-items-description {} */
+
+/* --------------- Reviews Area ----------------*/
+
+.reviews {
+  display: flex;
+  justify-content: center;
+}
+
+/* .reviews .article {
+  display: flex;
+  align-items: center;
+} */
+
+
+
+
+/* =============================================
+    About Page 
+    ============================================*/
+.mission {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* =============================================
+    FAQ Page 
+    ============================================*/
+
+.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -180,9 +346,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +359,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -260,4 +427,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
