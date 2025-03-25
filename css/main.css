@@ -93,10 +93,7 @@ textarea {
 .content-wrapper {
   outline: 3px dotted red;
   width: 90%;
-  /* max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap; */
+  padding: 50px 0;
 
 }
 
@@ -105,6 +102,7 @@ textarea {
 header {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -112,28 +110,26 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
-  /* max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap; */
+  margin: 0;
 }
 
-/* header a {} */
-
-/* header a img {} */
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
 
 header nav {
-  display: flex;
-  justify-content: space-around;
-
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
 
 }
+
 
 /* header nav ul li {} */
 
@@ -144,6 +140,26 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer .social {
+  padding-bottom: 50px;
+}
+
+footer h3 {
+  padding: 20px 0;
 }
 
 footer .social-icons {
@@ -158,12 +174,15 @@ footer .social-icons p {
   align-items: center;
 }
 
+footer .copyright {
+  padding: 20px 0;
+}
+
+
+
 
 /* --------------- Mobile Main Page Styles ----------------*/
-/* main {
-  display: flex;
-  justify-content: center;
-} */
+
 
 /* --------------- Hero ----------------*/
 .hero-area {
@@ -171,14 +190,23 @@ footer .social-icons p {
   justify-content: center;
 }
 
+
+
 /* --------------- Aside ----------------*/
 
 aside {
   display: flex;
   justify-content: center;
+
 }
 
-/* aside .form-description {} */
+/* aside h3 {
+  padding: 20px 0;
+} */
+
+aside .form-description {
+  padding-bottom: 30px;
+}
 
 /* aside .form {} */
 
@@ -187,6 +215,11 @@ aside {
 .features {
   display: flex;
   justify-content: center;
+
+}
+
+.features h2 {
+  margin-bottom: 60px;
 }
 
 .features .features-items {
@@ -194,17 +227,22 @@ aside {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  /* flex-direction: column;  ***???why not this????*****
-  align-items: center;
-  text-align: center; */
 }
 
-/* .features article {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features p {
+  margin: 0;
+}
+
+/* 
+.features .fontawesome-icon {
+  padding-bottom: 40px;
 } */
+
 /* 
 .features-items-description {} */
 
@@ -213,14 +251,18 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
+
 }
 
-/* .reviews .article {
-  display: flex;
-  align-items: center;
-} */
+.reviews h2 {
+  margin-bottom: 40px;
 
+}
 
+.reviews h3 {
+  margin: 20px 0;
+  width: 55%;
+}
 
 
 /* =============================================
@@ -234,6 +276,10 @@ aside {
 .contact-section {
   display: flex;
   justify-content: center;
+}
+
+.contact-content p {
+  margin: 0;
 }
 
 /* =============================================
@@ -250,7 +296,18 @@ aside {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
+}
+
+
 
 
 /* ==========================================================================
