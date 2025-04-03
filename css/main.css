@@ -92,8 +92,6 @@ textarea {
 /* --------------- General Styles ----------------*/
 html {
   font-size: 1rem;
-  /* color: #e2e3ed; */
-
 }
 
 body {
@@ -105,7 +103,9 @@ body {
 
 ul,
 ol {
-  list-style-type: none
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -117,7 +117,7 @@ a {
 h1 {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-size: 2.25em;
-  line-height: 2.688em;
+  line-height: 1.2;
   font-weight: 500;
 }
 
@@ -138,13 +138,17 @@ h4 {
 
 p {
   font-size: .875em;
-  line-height: 1.125em;
+  line-height: 1.285;
 
 }
 
-img {}
+img {
+  width: 100%;
+}
 
-figure {}
+figure {
+  margin: 0;
+}
 
 address {
   font-style: normal;
@@ -152,7 +156,7 @@ address {
 }
 
 .content-wrapper {
-  outline: 3px dotted red;
+  /* outline: 3px dotted red; */
   width: 90%;
   margin: 50px 0;
 
@@ -160,11 +164,11 @@ address {
 
 .reviews h2,
 .faq h2 {
-  font-size: 1.875em;
+  line-height: 1;
 }
 
-.faq-content {
-  line-height: 1.5em;
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 nav {
@@ -189,6 +193,10 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -267,6 +275,9 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
+
 }
 
 
@@ -295,6 +306,8 @@ aside .form-description {
 .features {
   display: flex;
   justify-content: center;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background-size: cover;
 
 }
 
@@ -516,17 +529,17 @@ input[type=button] {
   /**** General Styles ****/
   h1 {
     font-size: 3em;
-    line-height: 3em;
+    line-height: 1;
   }
 
   h2 {
     font-size: 2.25em;
-    line-height: 3em;
+    line-height: 1.333;
   }
 
   h3 {
     font-size: 1.5em;
-    line-height: 1.875;
+    line-height: 1.25;
   }
 
   .content-wrapper {
@@ -540,13 +553,13 @@ input[type=button] {
   }
 
   footer p {
-    line-height: 1.125em;
+    line-height: 1.285;
   }
 
   .faq h4,
   .faq p {
     font-size: .875em;
-    line-height: .984em;
+    line-height: 1.125;
   }
 
   /****************** Header *****************************/
@@ -559,6 +572,9 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 30%;
+  }
 
 
   header nav {
@@ -566,7 +582,7 @@ input[type=button] {
   }
 
   header nav ul {
-    /* list-style: none; */
+
     justify-content: space-between;
   }
 
@@ -576,6 +592,10 @@ input[type=button] {
 
 
   /******************** Hero Area **********************************/
+
+  .hero-area {
+    min-height: 600px;
+  }
 
   /**** Aside  ****/
 
@@ -601,6 +621,7 @@ input[type=button] {
 
   } */
 
+
   .features article {
     display: flex;
     align-items: center;
@@ -610,6 +631,8 @@ input[type=button] {
 
   }
 
+
+
   .features .features-item-description {
     width: 50%
   }
@@ -618,11 +641,27 @@ input[type=button] {
 
   /**** Reviews ****/
 
+  .reviews h2 {
+    line-height: 1;
+    width: 70%;
+  }
+
+  .reviews h3 {
+    width: 100%;
+    margin-top: 0;
+
+  }
+
+  .reviews figure {
+    width: 49%;
+  }
+
   .reviews article {
     display: flex;
     justify-content: space-between;
 
   }
+
 
   .reviews article div {
     width: 49%
@@ -704,12 +743,11 @@ input[type=button] {
   /**** General Styles ****/
   h1 {
     font-size: 3.75em;
-    line-height: 120%;
+    line-height: 1.194;
   }
 
   h2 {
     font-size: 2.25em;
-    line-height: 120%;
 
   }
 
@@ -724,22 +762,22 @@ input[type=button] {
     font-size: 1.875em;
   }
 
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
   .faq h4,
   .faq p {
     font-size: 1.125em;
-    line-height: 1.125em;
-  }
-
-  p {
-    font-size: 1.125em;
-    line-height: 1.5em;
+    line-height: 1;
   }
 
   .content-wrapper {
     max-width: 960px;
   }
 
-  /****************** Header *****************************/
+  /****************** Header and Footer*****************************/
   header {
     padding: 15px 0;
 
@@ -749,6 +787,10 @@ input[type=button] {
     margin: 15px 0;
   }
 
+  footer .content-wrapper {
+    margin: 30px 0 0 0;
+  }
+
 
 
 
@@ -756,6 +798,7 @@ input[type=button] {
 
   .hero-area h1 {
     width: 80%;
+
   }
 
   /***** Aside*****/
@@ -778,9 +821,21 @@ input[type=button] {
   }
 
   /***** Reviews *****/
+
+  .reviews .content-wrapper {
+    margin: 60px;
+  }
+
+  .reviews h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+
   .reviews article div {
     width: 42%;
   }
+
 
   /*=============== FAQ Page =============================*/
 
