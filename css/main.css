@@ -723,6 +723,10 @@ input[type=button] {
 
   /*=============== About Page =============================*/
 
+  .map figure {
+    padding-bottom: 55%;
+  }
+
   .mission-content {
     display: flex;
     justify-content: space-between;
@@ -861,6 +865,9 @@ input[type=button] {
 
   /*=============== About Page =============================*/
 
+  .map figure {
+    padding-bottom: 47%;
+  }
 
   mission h2,
   .contact section .content-wrapper h2 {
