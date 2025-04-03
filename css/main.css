@@ -100,6 +100,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
 
 ul,
@@ -141,12 +142,6 @@ p {
 
 }
 
-input {
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-size: 1.125em;
-  font-weight: 500;
-}
-
 img {}
 
 figure {}
@@ -185,6 +180,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background: #202322;
 }
 
 header .content-wrapper {
@@ -196,6 +192,7 @@ header .content-wrapper {
 }
 
 .header-divider {
+  color: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -203,6 +200,7 @@ header .content-wrapper {
 
 header nav {
   width: 60%;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -219,6 +217,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background: #202322;
 }
 
 footer p {
@@ -242,6 +241,7 @@ footer h3 {
 }
 
 footer .social-icons {
+  color: #527158;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -276,6 +276,7 @@ footer .copyright {
 aside {
   display: flex;
   justify-content: center;
+  background: #527158;
 
 }
 
@@ -324,6 +325,7 @@ aside .form-description {
 .reviews {
   display: flex;
   justify-content: center;
+  background: #2a423a;
 
 }
 
@@ -344,11 +346,13 @@ aside .form-description {
 .mission {
   display: flex;
   justify-content: center;
+  background: #527158;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background: #2a423a;
 }
 
 .contact-content p {
@@ -362,6 +366,7 @@ aside .form-description {
 .faq {
   display: flex;
   justify-content: center;
+  background: #527158;
 }
 
 .faq .content-wrapper {
@@ -378,6 +383,34 @@ aside .form-description {
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+/*********  Input Styles ****************/
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 
@@ -470,6 +503,11 @@ aside .form-description {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+
+
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -666,10 +704,13 @@ aside .form-description {
   /**** General Styles ****/
   h1 {
     font-size: 3.75em;
+    line-height: 120%;
   }
 
   h2 {
     font-size: 2.25em;
+    line-height: 120%;
+
   }
 
   .faq h2,
@@ -753,6 +794,7 @@ aside .form-description {
   mission h2,
   .contact section .content-wrapper h2 {
     width: 95%;
+    margin-bottom: 0;
   }
 
 }
